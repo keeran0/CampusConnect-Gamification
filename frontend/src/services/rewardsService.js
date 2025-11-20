@@ -1,4 +1,3 @@
-// src/services/rewardsService.js
 import api from './api';
 
 /**

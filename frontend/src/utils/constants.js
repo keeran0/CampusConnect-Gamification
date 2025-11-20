@@ -1,5 +1,3 @@
-// src/utils/constants.js
-
 export const EVENT_CATEGORIES = [
   { id: 'academic', name: 'Academic', color: 'blue' },
   { id: 'social', name: 'Social', color: 'purple' },

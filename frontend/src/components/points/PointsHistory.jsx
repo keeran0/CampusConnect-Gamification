@@ -1,4 +1,3 @@
-// src/components/points/PointsHistory.jsx
 import React from 'react';
 import { Calendar, Award, Star } from 'lucide-react';
 import { format } from 'date-fns';

@@ -1,4 +1,3 @@
-// src/pages/Leaderboard.jsx
 import React, { useState, useEffect } from 'react';
 import { Trophy, Medal, Award, TrendingUp, Users, Crown } from 'lucide-react';
 import Card from '../components/common/Card';

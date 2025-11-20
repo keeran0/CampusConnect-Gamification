@@ -1,4 +1,3 @@
-// src/components/common/EmptyState.jsx
 import React from 'react';
 import { Inbox } from 'lucide-react';
 import Button from './Button';

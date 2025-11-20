@@ -1,4 +1,3 @@
-// src/services/pointsService.js
 import api from './api';
 
 /**

@@ -1,4 +1,3 @@
-// src/components/rewards/RewardModal.jsx
 import React, { useState } from 'react';
 import { X, CheckCircle, AlertTriangle, Copy, Check } from 'lucide-react';
 import Button from '../common/Button';

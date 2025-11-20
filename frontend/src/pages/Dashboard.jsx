@@ -1,4 +1,3 @@
-// src/pages/Dashboard.jsx
 import React, { useState, useEffect } from 'react';
 import { TrendingUp, Award, Users } from 'lucide-react';
 import PointsDisplay from '../components/points/PointsDisplay';

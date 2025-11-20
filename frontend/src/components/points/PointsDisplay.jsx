@@ -1,4 +1,3 @@
-// src/components/points/PointsDisplay.jsx
 import React from 'react';
 import { Trophy, TrendingUp } from 'lucide-react';
 import Card from '../common/Card';

@@ -1,4 +1,3 @@
-// src/components/rewards/RewardCard.jsx
 import React from 'react';
 import { ShoppingCart, Package, AlertCircle } from 'lucide-react';
 import Card from '../common/Card';

@@ -1,4 +1,3 @@
-// src/services/leaderboardService.js
 import api from './api';
 
 /**

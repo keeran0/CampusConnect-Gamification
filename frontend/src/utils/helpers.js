@@ -1,5 +1,3 @@
-// src/utils/helpers.js
-
 /**
  * Format large numbers with commas
  */

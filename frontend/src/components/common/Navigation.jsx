@@ -1,4 +1,3 @@
-// src/components/common/Navigation.jsx
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { LayoutDashboard, Gift, Trophy } from 'lucide-react';

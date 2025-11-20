@@ -1,4 +1,3 @@
-// src/components/rewards/RewardsFilter.jsx
 import React from 'react';
 import { Filter } from 'lucide-react';
 import Badge from '../common/Badge';

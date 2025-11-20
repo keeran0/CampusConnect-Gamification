@@ -1,4 +1,3 @@
-// src/pages/Rewards.jsx
 import React, { useState, useEffect } from 'react';
 import { Gift, Search } from 'lucide-react';
 import RewardCard from '../components/rewards/RewardCard';
