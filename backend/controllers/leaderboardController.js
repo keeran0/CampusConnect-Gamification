@@ -1,4 +1,3 @@
-// backend/controllers/leaderboardController.js
 const { collections } = require('../config/firebase');
 const { mockLeaderboard, mockUser } = require('../data/mockData');
 

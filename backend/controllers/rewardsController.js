@@ -1,4 +1,3 @@
-// backend/controllers/rewardsController.js
 const { collections } = require('../config/firebase');
 const { mockRewards, mockUser } = require('../data/mockData');
 

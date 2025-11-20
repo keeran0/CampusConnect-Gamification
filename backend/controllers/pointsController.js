@@ -1,4 +1,3 @@
-// backend/controllers/pointsController.js
 const { collections } = require('../config/firebase');
 const { mockUser, mockPointsHistory, eventCategories } = require('../data/mockData');
 
