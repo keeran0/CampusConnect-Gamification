@@ -1,22 +1,19 @@
 import axios from 'axios';
 
-// Create axios instance with default config
+// Use environment variable or fallback to localhost
+const baseURL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: baseURL,
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json'
   }
 });
 
-// Request interceptor (for adding auth tokens later)
+// Request interceptor
 api.interceptors.request.use(
   (config) => {
-    // TODO: Add authentication token when implemented
-    // const token = localStorage.getItem('authToken');
-    // if (token) {
-    //   config.headers.Authorization = `Bearer ${token}`;
-    // }
     return config;
   },
   (error) => {
@@ -24,23 +21,19 @@ api.interceptors.request.use(
   }
 );
 
-// Response interceptor (for handling errors globally)
+// Response interceptor
 api.interceptors.response.use(
   (response) => {
-    return response.data; // Return only the data portion
+    return response.data;
   },
   (error) => {
-    // Handle different error scenarios
     if (error.response) {
-      // Server responded with error
       console.error('API Error:', error.response.data);
       return Promise.reject(error.response.data);
     } else if (error.request) {
-      // Request made but no response
       console.error('Network Error:', error.request);
       return Promise.reject({ error: 'Network error. Please check your connection.' });
     } else {
-      // Something else happened
       console.error('Error:', error.message);
       return Promise.reject({ error: error.message });
     }

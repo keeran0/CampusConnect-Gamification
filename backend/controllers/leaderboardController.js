@@ -10,9 +10,6 @@ const getGlobalLeaderboard = async (req, res, next) => {
   try {
     const { limit = 50, offset = 0, period = 'all-time' } = req.query;
     
-    // For now, returning mock all-time leaderboard
-    // TODO: Implement period filtering (monthly, weekly)
-    
     const start = parseInt(offset);
     const end = start + parseInt(limit);
     const leaderboard = mockLeaderboard.slice(start, end);
@@ -105,11 +102,6 @@ const getTopUsers = async (req, res, next) => {
  */
 const refreshLeaderboard = async (req, res, next) => {
   try {
-    // TODO: When integrated with Firebase:
-    // 1. Query all users from points collection
-    // 2. Sort by totalPoints descending
-    // 3. Assign ranks
-    // 4. Update leaderboard collection
     
     res.json({
       success: true,
