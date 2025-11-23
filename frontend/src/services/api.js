@@ -1,4 +1,3 @@
-// frontend/src/services/api.js - Update to use environment variable
 import axios from 'axios';
 
 // Use environment variable or fallback to localhost

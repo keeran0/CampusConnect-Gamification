@@ -127,12 +127,6 @@ const redeemReward = async (req, res, next) => {
       redeemedAt: new Date()
     };
     
-    // TODO: When integrating with Firebase:
-    // 1. Create redemption document
-    // 2. Decrease reward stock by 1
-    // 3. Decrease user's availablePoints
-    // 4. Create notification for user
-    
     res.status(201).json({
       success: true,
       data: redemption,
